@@ -42,8 +42,8 @@
     </td>
     <td>
         <asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" ErrorMessage="Enter valid Mail id" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
         <asp:RequiredFieldValidator ID="rfvmail" runat="server" ErrorMessage="Please Enter Email ID ✉ " ControlToValidate="txtemail" ForeColor="Red" />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtemail" ErrorMessage="Enter valid Mail id" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator> 
 
     </td>
 </tr>
@@ -57,6 +57,7 @@
 
     </td>
 </tr>
+           
      <tr>
     <td>
         <asp:Label ID="Labelcpas" runat="server" Text="Confirm password:" />
@@ -68,6 +69,20 @@
 
     </td>
 </tr>
+
+            <tr>
+                <td>
+                    <asp:Label ID="txt_age" runat="server" Text="Age:" />
+                </td>
+                <td>
+                    <asp:TextBox ID="Textage" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvage" runat="server" ErrorMessage="Please Enter Age" ControlToValidate="Textage" ForeColor="Red" />
+                    <asp:RangeValidator ID="rvage" runat="server" ControlToValidate="Textage" ErrorMessage="Age must be between 18 and 100" MinimumValue="18" MaximumValue="80" Type="Integer" ForeColor="Red"></asp:RangeValidator>
+                </td>
+            </tr>
+
+
+
      <tr>
     <td>
         <asp:Label ID="Labelphn" runat="server" Text="Enter phone number:" />
@@ -75,6 +90,7 @@
     <td>
         <asp:TextBox ID="Textphn" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfphn" runat="server" ErrorMessage="Please Enter Mobile Number 📞" ControlToValidate="Textphn" ForeColor="Red" />
+       <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Textphn" ErrorMessage="Enter valid Mobile number 📞 " ValidationExpression="^\d{10}$" ForeColor="Red"></asp:RegularExpressionValidator>
 
     </td>
 </tr>

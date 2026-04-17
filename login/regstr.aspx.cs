@@ -18,7 +18,7 @@ namespace login
         {
             lblmsg.Text= "Your Details :" +
                 "Your Name :" + txtfirst.Text+txtscnd.Text
-                +" - "+" Your Mail ID:"+ txtemail.Text;
+                +" - "+" Your Mail ID :"+ txtemail.Text;
         }
     }
 }
