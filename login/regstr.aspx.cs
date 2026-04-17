@@ -16,9 +16,9 @@ namespace login
 
         protected void btnreg_Click(object sender, EventArgs e)
         {
-            lblmsg.Text= "Your Details :" +
-                "Your Name :" + txtfirst.Text+txtscnd.Text
-                +" - "+" Your Mail ID :"+ txtemail.Text;
+            lblmsg.Text = "Your Details :" +
+                "Your Name :" + txtfirst.Text + txtscnd.Text
+                + " - " + " Your Mail ID :" + txtemail.Text + " your age is :" + txt_age.Text;
         }
     }
 }
