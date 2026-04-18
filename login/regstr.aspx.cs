@@ -17,8 +17,25 @@ namespace login
         protected void btnreg_Click(object sender, EventArgs e)
         {
             lblmsg.Text = "Your Details :" +
-                "Your Name :" + txtfirst.Text + txtscnd.Text
-                + " - " + " Your Mail ID :" + txtemail.Text + " your age is :" + txt_age.Text;
+                "Your Name :" + txtfirst.Text + " " +txtscnd.Text
+                + " - " + " Your Mail ID :" + txtemail.Text + " your age is :" + Textage.Text.ToString();
+        }
+
+        protected void cvage_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int age;
+            if (int.TryParse(args.Value, out age))
+            {
+                if (age >= 18 && age <= 100)
+                {
+                    args.IsValid = true;
+                }
+                else
+                {
+                    args.IsValid = false;
+                }
+            }
+            
         }
     }
 }

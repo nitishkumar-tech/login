@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="position: relative">
     <form id="form1" runat="server" style="position: relative">
         <div>
             <table align="center" >
@@ -32,7 +32,7 @@
         <asp:Label ID="lblscnd" runat="server" Text="Second Name:" />
     </td>
     <td>
-        <asp:TextBox ID="txtscnd" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtscnd" runat="server" style="position: relative"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvscnd" runat="server" ErrorMessage="Please Enter Second Name" ControlToValidate="txtscnd" ForeColor="Red" />
     </td>
 </tr>
@@ -61,11 +61,12 @@
      <tr>
     <td>
         <asp:Label ID="Labelcpas" runat="server" Text="Confirm password:" />
-                <asp:RequiredFieldValidator ID="rfcpass" runat="server" ErrorMessage="Please Enter Password" ControlToValidate="Textcpas" ForeColor="Red" />
-        <asp:CompareValidator ID="cvpass" runat="server" ErrorMessage="Passwords do not match" ControlToValidate="Textpas" ControlToCompare="Textcpas" ForeColor="Red" />
     </td>
     <td>
         <asp:TextBox ID="Textcpas" runat="server"></asp:TextBox>
+
+                <asp:RequiredFieldValidator ID="rfcpass" runat="server" ErrorMessage="Renter  Password" ControlToValidate="Textcpas" ForeColor="Red" />
+        <asp:CompareValidator ID="cvpass" runat="server" ErrorMessage="Passwords do not match" ControlToValidate="Textpas" ControlToCompare="Textcpas" ForeColor="Red" />
 
     </td>
 </tr>
@@ -77,7 +78,8 @@
                 <td>
                     <asp:TextBox ID="Textage" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvage" runat="server" ErrorMessage="Please Enter Age" ControlToValidate="Textage" ForeColor="Red" />
-                    <asp:RangeValidator ID="rvage" runat="server" ControlToValidate="Textage" ErrorMessage="Age must be between 18 and 100" MinimumValue="18" MaximumValue="80" Type="Integer" ForeColor="Red"></asp:RangeValidator>
+<%--                    <asp:RangeValidator ID="rvage" runat="server" ControlToValidate="Textage" ErrorMessage="Age must be between 18 and 100" MinimumValue="1" MaximumValue="100" Type="Integer" ForeColor="Red"></asp:RangeValidator>--%>
+                    <asp:CustomValidator ID="cvage" runat="server" ErrorMessage="age must be 18 to 100" OnServerValidate="cvage_ServerValidate" ForeColor="Red" />
                 </td>
             </tr>
 

@@ -150,6 +150,15 @@ namespace login
         protected global::System.Web.UI.WebControls.Label Labelcpas;
 
         /// <summary>
+        /// Textcpas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Textcpas;
+
+        /// <summary>
         /// rfcpass control.
         /// </summary>
         /// <remarks>
@@ -166,15 +175,6 @@ namespace login
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator cvpass;
-
-        /// <summary>
-        /// Textcpas control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textcpas;
 
         /// <summary>
         /// txt_age control.
@@ -204,13 +204,13 @@ namespace login
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvage;
 
         /// <summary>
-        /// rvage control.
+        /// cvage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvage;
+        protected global::System.Web.UI.WebControls.CustomValidator cvage;
 
         /// <summary>
         /// Labelphn control.
