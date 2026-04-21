@@ -101,7 +101,7 @@ namespace login
             if (chkCricket.Checked)
                 {
                 lblchkmsg.Text = "selected game is cricket";
-
+                lblchkmsg.ForeColor = System.Drawing.Color.Green;
             }
         }
     }

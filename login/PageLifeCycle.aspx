@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblmsg" runat="server" ></asp:Label>
+            <asp:Label ID="lblmsg" runat="server" />
             <asp:Label ID="label1" runat="server" ></asp:Label>
             <asp:Label ID="label2" runat="server" ></asp:Label>
             <asp:Label ID="label3" runat="server" ></asp:Label>
@@ -19,6 +19,7 @@
             <asp:TextBox ID="txtusername" runat="server" OnTextChanged="txtusername_TextChanged"></asp:TextBox>
 
             <asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
+
             <br />
             <asp:RadioButton ID="rbtTelugu" runat="server" GroupName="language" Text="Telugu" AutoPostBack="True" OnCheckedChanged="rbtTelugu_CheckedChanged" />
             <asp:Label ID="lblTelugu" runat="server"></asp:Label> <br />
