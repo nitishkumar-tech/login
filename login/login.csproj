@@ -73,6 +73,7 @@
     <Content Include="DropDownlist.aspx" />
     <Content Include="Employeedetails.aspx" />
     <Content Include="Movie_resg.aspx" />
+    <Content Include="PageLifeCycle.aspx" />
     <Content Include="regstr.aspx" />
     <Content Include="student_details.aspx" />
     <Content Include="Web.config" />
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="Movie_resg.aspx.designer.cs">
       <DependentUpon>Movie_resg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageLifeCycle.aspx.cs">
+      <DependentUpon>PageLifeCycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLifeCycle.aspx.designer.cs">
+      <DependentUpon>PageLifeCycle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="regstr.aspx.cs">
